@@ -1,17 +1,160 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
-    <h1>HTML Form</h1>
+    <!-- <h1>HTML Form</h1> -->
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+      <fieldset class="group">
+        <legend>Personal information</legend>
+        <label class="form_field">
+          Surname:
+          <input
+           type="text"
+           name="surname"
+           class="field"
+          >
+        </label>
+        <label class="form_field">
+          Name:
+          <input
+           class="field"
+           type="text"
+           name="name"
+          >
+        </label>
+        <label class="form_field">
+          How old are You?
+          <input
+           class="field"
+           type="number"
+           name="yearsOld"
+           min="1"
+           max="100"
+           value="12"
+          >
+        </label>
+        <label class="form_field">
+          Full date of birth:
+          <input
+           class="field"
+           type="date"
+           name="date"
+          >
+        </label>
+        <label class="form_field">
+          I accept the term of the agreement
+          <input
+           class="field"
+           type="checkbox"
+           name="agreement"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="group">
+        <legend>Registration</legend>
+        <label class="form_field">
+          E-mail:
+          <input
+           type="email"
+           class="field"
+           name="email"
+           placeholder="email@example.com"
+          >
+        </label>
+        <label class="form_field">
+          Password:
+          <input
+           type="password"
+           class="field"
+           name="password"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="group">
+        <legend>An interesting fact about you!</legend>
+        <label class="form_field cat">
+          Do you love cats?
+          <input
+           type="radio"
+           name="love_to_cat"
+           class="field"
+            >Yes
+        </label>
+        <label class="form_field cat">
+          <input
+           type="radio"
+           class="field"
+           name="love_to_cat"
+          >No
+        </label>
+        <label class="form_field">
+          What is your favourite color?
+          <input
+           type="color"
+           class="field"
+           name="color"
+          >
+        </label>
+        <label class="form_field">
+          What time do you go to bed?
+          <input
+           type="time"
+           class="field"
+           name="time"
+          >
+        </label>
+        <label class="form_field">
+          What are your favorite brand of cars?
+          <select name="brands" multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
+        <label class="form_field">
+          How do you rate our work?
+          <input
+           type="range"
+           name="rate"
+           class="field"
+           value="0"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="group">
+        <legend>Additional info:</legend>
+        <label class="form_field">
+          Comments:
+          <textarea
+           type="email"
+           class="field"
+           name="email"
+          ></textarea>
+        </label>
+        <label class="form_field">
+          Would you recommend us?:
+          <select name="recommendation">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+      <button
+       type="submit"
+       class="group">
+        Submit
+      </button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
+
 </html>
