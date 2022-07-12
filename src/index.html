@@ -19,134 +19,162 @@
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
       <fieldset class="group">
         <legend>Personal information</legend>
-        <label class="form_field">
+        <label class="form_field" for="surname">
           Surname:
           <input
+           id="surname"
            type="text"
            name="surname"
            class="field"
+           autocomplete="off"
           >
         </label>
-        <label class="form_field">
+        <label class="form_field" for="name">
           Name:
           <input
+           id="name"
            class="field"
            type="text"
            name="name"
+           autocomplete="off"
           >
         </label>
-        <label class="form_field">
+        <label class="form_field" for="age">
           How old are You?
           <input
+           id="age"
            class="field"
            type="number"
            name="yearsOld"
            min="1"
            max="100"
            value="12"
+           autocomplete="off"
           >
         </label>
-        <label class="form_field">
+        <label class="form_field" for="birth_day">
           Full date of birth:
           <input
+           id="birth_day"
            class="field"
            type="date"
            name="date"
+           autocomplete="off"
           >
         </label>
-        <label class="form_field">
+        <label class="form_field" for="agreement">
           I accept the term of the agreement
           <input
+           id="agreement"
            class="field"
            type="checkbox"
            name="agreement"
+           autocomplete="off"
           >
         </label>
       </fieldset>
       <fieldset class="group">
         <legend>Registration</legend>
-        <label class="form_field">
+        <label class="form_field" for="email">
           E-mail:
           <input
+           id="email"
            type="email"
            class="field"
            name="email"
            placeholder="email@example.com"
+           autocomplete="off"
           >
         </label>
-        <label class="form_field">
+        <label class="form_field" for="passw">
           Password:
           <input
+           id="passw"
            type="password"
            class="field"
            name="password"
+           autocomplete="off"
           >
         </label>
       </fieldset>
       <fieldset class="group">
         <legend>An interesting fact about you!</legend>
-        <label class="form_field cat">
+        <label class="form_field cat" for="love1">
           Do you love cats?
           <input
+           id="love"
            type="radio"
-           name="love_to_cat"
+           name="radio"
            class="field"
+           autocomplete="off"
             >Yes
         </label>
-        <label class="form_field cat">
+        <label class="form_field cat" for="love2">
           <input
+           id="love2"
            type="radio"
            class="field"
-           name="love_to_cat"
+           name="radio"
+           autocomplete="off"
           >No
         </label>
-        <label class="form_field">
+        <label class="form_field" for="color">
           What is your favourite color?
           <input
+           id="color"
            type="color"
            class="field"
            name="color"
+           autocomplete="off"
           >
         </label>
-        <label class="form_field">
+        <label class="form_field" for="time">
           What time do you go to bed?
           <input
+           id="time"
            type="time"
            class="field"
            name="time"
+           autocomplete="off"
           >
         </label>
-        <label class="form_field">
+        <label class="form_field" for="brand">
           What are your favorite brand of cars?
-          <select name="brands" multiple>
+          <select
+           multiple
+           name="brands"
+           id="brand"
+          >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
           </select>
         </label>
-        <label class="form_field">
+        <label class="form_field" for="rating">
           How do you rate our work?
           <input
+           id="rating"
            type="range"
            name="rate"
            class="field"
            value="0"
+           autocomplete="off"
           >
         </label>
       </fieldset>
       <fieldset class="group">
         <legend>Additional info:</legend>
-        <label class="form_field">
+        <label class="form_field" for="comment">
           Comments:
           <textarea
-           type="email"
+           id="comment"
            class="field"
            name="email"
           ></textarea>
         </label>
-        <label class="form_field">
+        <label class="form_field" for="recommend">
           Would you recommend us?:
-          <select name="recommendation">
+          <select name="recommendation" id="recommend">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
@@ -154,7 +182,8 @@
       </fieldset>
       <button
        type="submit"
-       class="group">
+       class="group"
+      >
         Submit
       </button>
     </form>
