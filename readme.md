@@ -19,16 +19,16 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
 - Do not use tabs for indentation. Instead use 2 spaces
 - Most of the time you want each tag in new line
 - Form should have different inputs with such types:
-  - [ ] text+
-  - [ ] number+
-  - [ ] email+
-  - [ ] checkbox+
-  - [ ] radio+
-  - [ ] password+
+  - [ ] text
+  - [ ] number
+  - [ ] email
+  - [ ] checkbox
+  - [ ] radio
+  - [ ] password
   - [ ] range
-  - [ ] time+
-  - [ ] color+
-  - [ ] date+
+  - [ ] time
+  - [ ] color
+  - [ ] date
 - Form should have textarea and select elements.
 - You should use each of this attribute at least once
   - [ ] required
